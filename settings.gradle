@@ -1,0 +1,1 @@
+include ':app', 'tina-base', 'tina-common'

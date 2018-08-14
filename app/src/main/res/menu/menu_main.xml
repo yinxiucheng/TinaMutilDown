@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="">
+
+    <item
+        android:id="@+id/pause"
+        android:title="pauseAll"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/recover"
+        android:title="recoverAll"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/cancel"
+        android:title="cancelAll"
+        app:showAsAction="withText" />
+
+</menu>

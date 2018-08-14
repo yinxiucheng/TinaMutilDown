@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">live-common</string>
+    <!-- 无网络的情况 -->
+    <string name="no_internet_error_hint">hello?好像没网络啊！</string>
+    <!--主机挂了，也就是你服务器关了 -->
+    <string name="server_error_hint">服务器开小差,请稍后重试！</string>
+    <!-- 连接超时，读取超时等 -->
+    <string name="connect_error_hint">网络连接超时，请检查您的网络状态！</string>
+    <!-- 解析Gso出错，或者类型转换出错  ps：当然你不能跟用户这么说 所以 -->
+    <string name="parse_error_hint">未能请求到数据，攻城狮正在修复！</string>
+    <!-- 其他，没有统一处理的错误 -->
+    <string name="other_error_hint">哎呀故障了，攻城狮正在修复！</string>
+</resources>

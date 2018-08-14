@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="voice_tran50_white">#80FFFFFF</color>
+    <color name="voice_tran50_black">#7F000000</color>
+</resources>

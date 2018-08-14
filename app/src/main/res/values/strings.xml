@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Tina</string>
+    <string name="download">download</string>
+    <string name="pause">pause</string>
+    <string name="cancel">cancel</string>
+
+    <string name="action_pause_all">pause all</string>
+    <string name="action_recover_all">recover all</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="action_edit">Edit</string>
+
+</resources>
