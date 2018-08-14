@@ -6,18 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
 import com.tbruyelle.rxpermissions2.RxPermissions;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import tina.com.common.download.DownloadManager;
-import tina.com.common.download.entity.DownloadInfo;
-import tina.com.common.download.entity.DownloadStatus;
-import tina.com.common.download.observer.DataWatcher;
-import tina.com.common.download.utils.Trace;
-import tina.com.common.http.utils.ToastUtil;
-import tina.com.common.http.utils.Utils;
+import tina.com.common.download.utils.ToastUtil;
+import tina.com.common.download.utils.Utils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

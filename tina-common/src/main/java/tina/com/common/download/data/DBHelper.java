@@ -12,7 +12,7 @@ import java.util.List;
 
 import tina.com.common.download.entity.DownloadInfo;
 import tina.com.common.download.entity.ThreadInfo;
-import tina.com.live_base.utils.BaseUtils;
+import tina.com.common.download.utils.Utils;
 
 /**
  * @author yxc
@@ -36,7 +36,7 @@ public class DBHelper {
         if (null == instance){
             synchronized (DBHelper.class){
                 if (null == instance){
-                    instance = new DBHelper(BaseUtils.getContext());
+                    instance = new DBHelper(Utils.getContext());
                 }
             }
         }

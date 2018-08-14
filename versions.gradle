@@ -84,32 +84,11 @@ deps.kotlin = kotlin
 
 //view
 deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
-deps.qmui = "com.qmuiteam:qmui:$versions.qmui"
-deps.flow_layout = "com.zhy:flowlayout-lib:$versions.flow_layout"
-deps.swipe_recycler = "com.yanzhenjie:recyclerview-swipe:$versions.swipe_recycler"
-deps.easy_recycler = "com.jude:easyrecyclerview:$versions.easy_recycler"
-deps.photo_view = "com.github.chrisbanes:PhotoView:$versions.photo_view"
-deps.material_dialog = "com.afollestad.material-dialogs:core:$versions.material_dialog"
-
-deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
 deps.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
 deps.rx_android = "io.reactivex.rxjava2:rxandroid:$versions.rx_android"
 //other
 deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
 deps.event_bus = "org.greenrobot:eventbus:$versions.event_bus"
-deps.persistent_cookie = "com.github.franmontiel:PersistentCookieJar:$versions.persistent_cookie"
-deps.gson = "com.google.code.gson:gson:$versions.gson"
-deps.permission = "com.yanzhenjie:permission:$versions.permission"
-deps.utils = "com.blankj:utilcode:$versions.utils"
-deps.top_snackbar ="com.androidadvance:topsnackbar:$versions.top_snackbar"
-deps.litepal = "org.litepal.android:core:$versions.litepal"
-deps.toasty =  "com.github.GrenderG:Toasty:$versions.toasty"
-deps.logger = "com.orhanobut:logger:$versions.logger"
-deps.arouter_api = "com.alibaba:arouter-api:$versions.arouter_api"
-deps.arouter_compiler = "com.alibaba:arouter-compiler:$versions.arouter_compiler"
-
-deps.annimon_stream = "com.annimon:stream:$versions.annimon_stream"
-
 ext.deps = deps
 
 def build_versions = [:]

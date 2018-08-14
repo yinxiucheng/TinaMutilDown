@@ -6,8 +6,7 @@ import android.os.Environment;
 import java.io.File;
 
 import tina.com.common.download.utils.DownloadConfig;
-import tina.com.common.http.utils.Utils;
-import tina.com.live_base.utils.BaseUtils;
+import tina.com.common.download.utils.Utils;
 
 /**
  * @author yxc
@@ -19,7 +18,6 @@ public class TinaApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Utils.init(this);
-        BaseUtils.init(this);
         initDownloader();
         setDownloadDir();
     }

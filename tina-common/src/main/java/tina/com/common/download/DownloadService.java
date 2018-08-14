@@ -25,7 +25,7 @@ import tina.com.common.download.observer.DataChanger;
 import tina.com.common.download.utils.Constants;
 import tina.com.common.download.utils.DownloadConfig;
 import tina.com.common.download.utils.DownloadUtils;
-import tina.com.common.http.utils.Utils;
+import tina.com.common.download.utils.Utils;
 
 /**
  * @author yxc

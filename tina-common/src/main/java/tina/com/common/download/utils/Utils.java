@@ -1,4 +1,4 @@
-package tina.com.common.http.utils;
+package tina.com.common.download.utils;
 
 
 import android.app.Activity;
@@ -12,6 +12,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
+
 
 /**
  * <p>Utils初始化相关 </p>
@@ -73,38 +74,6 @@ public class Utils {
     public static String getString(@StringRes int id) {
         return context.getResources().getString(id);
     }
-
-    /**
-     * 判断App是否是Debug版本
-     *
-     * @return {@code true}: 是<br>{@code false}: 否
-     */
-    public static boolean isAppDebug() {
-        if (StringUtils.isSpace(context.getPackageName())) return false;
-        try {
-            PackageManager pm = context.getPackageManager();
-            ApplicationInfo ai = pm.getApplicationInfo(context.getPackageName(), 0);
-            return ai != null && (ai.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-
-
-    /**
-     * The {@code fragment} is added to the container view with id {@code frameId}. The operation is
-     * performed by the {@code fragmentManager}.
-     */
-    public static void addFragmentToActivity(@NonNull FragmentManager fragmentManager,
-                                             @NonNull Fragment fragment, int frameId) {
-        checkNotNull(fragmentManager);
-        checkNotNull(fragment);
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(frameId, fragment);
-        transaction.commit();
-    }
-
 
     public static <T> T checkNotNull(T obj) {
         if (obj == null) {

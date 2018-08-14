@@ -1,4 +1,4 @@
-package tina.com.live_base.utils;
+package tina.com.common.download.utils;
 
 import android.app.Activity;
 import android.os.Looper;
@@ -13,14 +13,13 @@ import android.widget.Toast;
  */
 @SuppressWarnings("unused")
 public class ToastUtil {
-
     /**
      * 弹出Toast
      *
      * @param resId Toast内容对应的资源
      */
     public static void show(@StringRes int resId) {
-        Toast.makeText(BaseUtils.getContext(), resId, Toast.LENGTH_SHORT).show();
+        Toast.makeText(Utils.getContext(), resId, Toast.LENGTH_SHORT).show();
     }
 
     /**
@@ -30,7 +29,7 @@ public class ToastUtil {
      */
     public static void show(String text) {
         if (TextUtils.isEmpty(text)) return;
-        Toast.makeText(BaseUtils.getContext(), text, Toast.LENGTH_SHORT).show();
+        Toast.makeText(Utils.getContext(), text, Toast.LENGTH_SHORT).show();
     }
 
     /**
@@ -41,7 +40,7 @@ public class ToastUtil {
         if (length < 0 || length > 1) {
             length = Toast.LENGTH_SHORT;
         }
-        Toast toast = Toast.makeText(BaseUtils.getContext(), text, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(Utils.getContext(), text, Toast.LENGTH_SHORT);
         toast.setDuration(length);
         toast.show();
     }
@@ -52,7 +51,7 @@ public class ToastUtil {
     public static void showInCenter(String text) {
         if (TextUtils.isEmpty(text)) return;
         try {
-            Toast toast = Toast.makeText(BaseUtils.getContext(), text, Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(Utils.getContext(), text, Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
         } catch (NullPointerException e) {
